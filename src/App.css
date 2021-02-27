@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.i01d, .i01n{
+  background-image: url("/src/Image/backgroundImg/clear-sky-min.jpg");
+  width: 100%;
+  height:auto;
+  
+  }
+
+.i02d, .i02n{
+  background-image: url("/src/Image/backgroundImg/few clouds-min.jpg");
+  width: 100%;
+  height:auto;
+    }
+
+.i03d, .i03n{
+  background: url("/src/Image/backgroundImg/scattered clouds-min.jpg");
+  height: 100%;
+  width: 100%;
+      }
+
+.i04d, .i04n {
+  background: url("/src/Image/backgroundImg/Brokken clouds-min.jpg");
+  height: auto;
+  width: auto;
+  }
+
+.i09d, .i09n {
+  background: url("/src/Image/backgroundImg/shower rain-min.jpg");
+  height: auto;
+  width: auto;
+  }
+
+.i10d, .i10n {
+  background: url("/src/Image/backgroundImg/rain-min.jpg");
+  height: auto;
+  width: auto;
+  }
+
+.i11d, .i11n {
+  background: url("/src/Image/backgroundImg/thunderstorm-min.jpg");
+  height: auto;
+  width: auto;
+  }
+
+  .i13d, .i13n {
+    background: url("/src/Image/backgroundImg/snow-min.jpg");
+    height: auto;
+    width: auto;
+  }
+
+.i50d, .i50n {
+  background: url("/src/Image/backgroundImg/mist-min.jpg");
+  height: auto;
+  width: auto;
+  }
+

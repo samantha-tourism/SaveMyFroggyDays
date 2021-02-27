@@ -1,0 +1,84 @@
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+#error404 {
+  color: rgb(94, 90, 90);
+}
+.listCard {
+  list-style: none;
+}
+.card {
+  /* height: 400px; */
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 30px;
+}
+
+.cardContent {
+  /* height: 400px; */
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px #707070;
+  background: #9dcc3a;
+}
+.cardContent:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+.actImg {
+  background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/1024px-No_image_available.svg.png");
+  background-size: cover;
+}
+.titre h3 {
+  margin: 0;
+}
+.titre {
+  height:140px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-shadow: #459936 0px 0px 2px;
+  text-align: center;
+  overflow: hidden;
+}
+.logo p {
+  margin-left: 10px;
+  color: black;
+}
+.logo {
+  height: 100%;
+  width: 100%;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  font-family: "Merriweather", serif;
+}
+.logoImg {
+  width: 50px;
+  height: 50px;
+}
+.actImg {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px 20px 0px 0px;
+}
+@media (max-width: 500px) {
+  .card {
+    margin: 20px;
+  }
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+}

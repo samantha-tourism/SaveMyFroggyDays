@@ -1,0 +1,323 @@
+#searchFunction {
+  background-color: #B6ECFC;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center; 
+  height: auto;
+  padding-top:50px;
+  margin:0px;
+}
+.discoverActivity{
+  font-size:50px;
+  font-weight: bold;
+  color:#ffffff;
+  text-shadow: black 2px 2px;
+  margin:0px;
+}
+.descriptionDiscover{
+color:#ffffff;
+text-shadow: black 1px 1px;
+font-weight: bold;
+margin-bottom:30px;
+}
+.inputSearchBar{
+  background: white;
+  display: flex;
+  justify-content: center;
+  width: 120vh;
+  height: 70px;
+  align-items: center;
+  border-radius:50px;
+}
+.locationSearchBar{
+  width:100%;
+}
+.formInput{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+.letsGo{
+  font-weight: bold;
+  color:#707070;
+}
+
+#send {
+  border-radius: 10px;
+  color:white;
+  background: #9dcc3a;
+  border: none;
+  height: 40px;
+  width:150px;
+  font-weight:bold;
+  font-size:110%;
+  margin-top:50px;
+  margin-bottom:15px;
+}
+#send:hover{
+  cursor:pointer;
+}
+input:focus{
+  outline:none;
+  border-color: inherit;
+  background:none;
+}
+button:focus{
+  outline:none;
+  border-color: inherit;
+}
+.locationSearchBar{
+  width:33%;
+  margin:0px;
+  border-right:1px solid #707070;
+}
+#city{
+  width: 100%;
+  border: none;
+  font-size:100%;
+  background:none;
+  margin-left:20px;
+}
+.when{
+  width:33%;
+  border-right:1px solid #707070;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#filterDescription {
+  border: none;
+  width: 33%;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:100%;
+}
+#setting {
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
+  padding:5px;
+}
+#setting:hover{
+  background:#eff7f6;
+  border-radius:10%;
+  cursor:pointer; 
+}
+.textCategories{
+  color: #707070;
+  font-size: 100%;
+}
+
+.errorWeather{
+  margin-top:0px;
+  margin-bottom:15px;
+}
+@media (max-width:1024px){
+  .inputSearchBar{
+    background: white;
+    display: flex;
+    justify-content: center;
+    width: 80vh;
+    height: 70px;
+    align-items: center;
+    border-radius:50px;
+  }
+  .letsGo{
+    display:none;
+  }
+}
+@media (max-width:768px){
+  .inputSearchBar{
+    background: white;
+    display: flex;
+    justify-content: center;
+    width: 60vh;
+    height: 70px;
+    align-items: center;
+    border-radius:50px;
+  }
+   .formInput{
+    font-size:80%;
+  }
+}
+@media (min-width:500px){
+
+  #search {
+    display:none;
+  }
+}
+
+@media (max-width:500px){
+  #textFilter{
+  display:none; 
+  }
+  .discoverActivity,
+  .descriptionDiscover{
+    display:none;
+  }
+  #searchFunction {
+    background: white;
+    height: 40%;
+    width:100%;
+  }
+.formInput{
+  width:100%;
+  height:100%;
+  margin:0px;
+}
+.inputSearchBar{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap:5px;
+    width:95%;
+    height: 100%;
+
+    
+  }
+  .when{
+    border:none;
+    background:#9DCC3A;
+    width:100%;
+    grid-column: 1;
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    border-radius:5px;
+    color:white;
+   
+  }
+  .locationSearchBar{
+    border:none;
+    width:100%;
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  #city{
+    width:100%;
+    height: 45px;
+    border: none;
+    font-size:100%;
+    margin-left: 0px;
+    background: #edfbff;
+    border-radius:5%;
+  }
+
+  .dropdownLater{
+    background:#9DCC3A;
+    outline:none
+  }
+
+  #setting {
+    width: 35px;
+    height: 35px;
+    grid-column: 5;
+    grid-row: 1;
+  }
+  #filterDescription{
+  width:100%;
+  }
+  #send {
+    display: block;
+    border-radius: 10px;
+    color:white;
+    background: #459936;
+    border: none;
+    height: 30px;
+    width:110px;
+    font-weight:bold;
+    font-size:100%;
+
+    margin-top:10px;
+    margin-bottom:15px;
+  }
+  .i01d, .i01n, .i02d, .i02n, .i03d, .i03n, .i04d, .i04n, .i09d, .i09n, .i10d, .i10n, .i11d, .i11n, .i13d, .i13n, .i50d, .i50n{
+    background:none;
+  }
+}
+.i01d, .i01n{
+  background-image: url("/src/Image/backgroundImg/clear-sky-min.jpg");
+  width: 100%;
+  height:auto;
+  background-size: cover;
+ 
+  }
+
+.i02d, .i02n{
+  background-image: url("/src/Image/backgroundImg/few clouds-min.jpg");
+  width: 100%;
+  height:auto;
+  background-size: cover;
+
+    }
+
+.i03d, .i03n{
+  background-image: url("/src/Image/backgroundImg/scattered clouds-min.jpg");
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+
+      }
+
+.i04d, .i04n {
+  background-image: url("/src/Image/backgroundImg/Brokken clouds-min.jpg");
+  height: auto;
+  width: auto;
+  background-size: cover;
+
+  }
+
+.i09d, .i09n {
+  background-image: url("/src/Image/backgroundImg/shower rain-min.jpg");
+  height: auto;
+  width: auto;
+  background-size: cover;
+
+  }
+
+.i10d, .i10n {
+  background-image: url("/src/Image/backgroundImg/rain-min.jpg");
+  height: auto;
+  width: auto;
+  background-size: cover;
+
+}
+
+.i11d, .i11n {
+  background-image: url("/src/Image/backgroundImg/thunderstorm-min.jpg");
+  height: auto;
+  width: auto;
+  background-size: cover;
+
+  }
+
+  .i13d, .i13n {
+    background-image: url("/src/Image/backgroundImg/snow-min.jpg");
+    height: auto;
+    width: auto;
+    background-size: cover;
+ 
+  }
+
+.i50d, .i50n {
+  background-image: url("/src/Image/backgroundImg/mist-min.jpg");
+  height: auto;
+  width: auto;
+  background-size: cover;
+
+  }
+  
+  
+  .filterContainer{
+    display: flex;
+    margin-top: 50px;
+    color:#707070;
+    background-color: white;
+    border-radius:50px;
+    justify-content: space-around;
+    background-size: cover;
+    
+  }
